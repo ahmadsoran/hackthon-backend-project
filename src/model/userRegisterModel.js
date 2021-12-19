@@ -12,7 +12,12 @@ role:{
     type: [String],
     default: 'user',
     enum: ['user','doctor','admin']
-}
+},
+profieImg: String,
+name: String,
+age: Number,
+description: String,
+
 
 })
 

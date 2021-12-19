@@ -55,4 +55,15 @@ userRoute.post("/login", async (req, res) => {
       }
     });
   });
+  
+userRoute.get('/doctors',   async (req , res)=>{
+
+    UserSchema.find({role: 'doctor'}).then(data => res.json(data)).catch((err)=>{err.message+' doctor not found'})
+
+})
+userRoute.get('/doctors/:id', async (req , res)=>{
+    const id = req.params.id
+    UserSchema.findById(id, {} , {role: 'doctor'}).then(data => res.json(data)).catch((err)=>{res.send('no  doctor found ')})
+
+})
 export default userRoute;
