@@ -66,4 +66,6 @@ userRoute.get('/doctors/:id', async (req , res)=>{
     UserSchema.findById(id, {} , {role: 'doctor'}).then(data => res.json(data)).catch((err)=>{res.send('no  doctor found ')})
 
 })
+
+
 export default userRoute;
