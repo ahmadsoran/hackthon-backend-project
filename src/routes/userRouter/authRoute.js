@@ -1,5 +1,5 @@
 import {Router} from 'express'
-import UserSchema from '../model/userRegisterModel.js'
+import UserSchema from '../../model/userRegisterModel.js'
 import loginValidation from './loginValidation.js'
 import userValidationRegister from './registerValidation.js'
 import jwt from 'jsonwebtoken'
