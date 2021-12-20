@@ -1,7 +1,7 @@
 {
   "name": "install",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
   "type": "module",
   "scripts": {
     "start": "nodemon app.js"
@@ -19,6 +19,8 @@
     "mongoose": "^6.0.14",
     "morgan": "~1.9.1",
     "nodemon": "^2.0.15",
+    "socket.io": "^4.4.0",
+    "socket.io-client": "^4.4.0",
     "winston": "^3.3.3",
     "winston-mongodb": "^5.0.7"
   }
